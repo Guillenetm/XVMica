@@ -1,0 +1,259 @@
+/* ==========================================================
+   MICAELA XV — RESPONSIVE BREAKPOINTS
+   Mobile-first design (base = mobile)
+   ========================================================== */
+
+/* ── Tablet (≥ 768px) ──────────────────────────────────── */
+
+@media (min-width: 768px) {
+
+    :root {
+        --section-py: 100px;
+        --container-px: 32px;
+    }
+
+    .container {
+        max-width: 600px;
+    }
+
+    /* Loader */
+    .loader-letter {
+        font-size: 160px;
+    }
+
+    /* Envelope */
+    .envelope-wrapper {
+        width: 340px;
+        height: 240px;
+    }
+
+    .envelope-body {
+        height: 190px;
+    }
+
+    .envelope-flap::before {
+        border-left: 170px solid transparent;
+        border-right: 170px solid transparent;
+        border-top: 140px solid #EDE9E0;
+    }
+
+    .envelope-flap::after {
+        border-left: 170px solid transparent;
+        border-right: 170px solid transparent;
+        border-top: 140px solid #F8F6F0;
+    }
+
+    .envelope-flap {
+        height: 140px;
+    }
+
+    .envelope-letter {
+        width: 290px;
+        height: 160px;
+    }
+
+    .seal-circle {
+        width: 84px;
+        height: 84px;
+    }
+
+    .seal {
+        width: 84px;
+        height: 84px;
+    }
+
+    .seal-letter {
+        font-size: 38px;
+    }
+
+    /* Hero */
+    .hero-name {
+        font-size: 90px;
+    }
+
+    .hero-card {
+        padding: 80px 48px;
+    }
+
+    /* Countdown */
+    .countdown-grid {
+        max-width: 420px;
+        gap: 16px;
+    }
+
+    .countdown-number {
+        font-size: 44px;
+    }
+
+    .flip-digit {
+        height: 52px;
+    }
+
+    .countdown-card {
+        padding: 24px 12px;
+    }
+
+    .countdown-label {
+        font-size: 11px;
+    }
+
+    /* Event */
+    .event-card {
+        padding: 48px 36px;
+    }
+
+    .event-buttons {
+        flex-direction: row;
+        justify-content: center;
+    }
+
+    /* Dress Code */
+    .colors-grid {
+        max-width: 420px;
+        gap: 20px;
+    }
+
+    /* Gallery */
+    .gallery-swiper .swiper-slide {
+        width: 320px;
+        height: 440px;
+    }
+
+    /* Quiz */
+    .quiz-card {
+        padding: 44px 32px;
+    }
+
+    /* Footer */
+    .footer-message {
+        font-size: 22px;
+        max-width: 400px;
+    }
+
+    .footer-name {
+        font-size: 56px;
+    }
+}
+
+/* ── Desktop (≥ 1024px) ────────────────────────────────── */
+
+@media (min-width: 1024px) {
+
+    :root {
+        --section-py: 120px;
+    }
+
+    .container {
+        max-width: 720px;
+    }
+
+    /* Loader */
+    .loader-letter {
+        font-size: 180px;
+    }
+
+    /* Hero */
+    .hero-name {
+        font-size: 110px;
+    }
+
+    .hero-quote {
+        font-size: 18px;
+        max-width: 400px;
+    }
+
+    /* Countdown */
+    .countdown-grid {
+        max-width: 480px;
+    }
+
+    .countdown-number {
+        font-size: 52px;
+    }
+
+    .flip-digit {
+        height: 62px;
+    }
+
+    /* Dress Code */
+    .colors-grid {
+        max-width: 480px;
+    }
+
+    .color-swatch {
+        width: 52px;
+        height: 52px;
+    }
+
+    /* Gallery */
+    .gallery-swiper .swiper-slide {
+        width: 360px;
+        height: 500px;
+    }
+
+    .gallery-swiper .swiper-button-next,
+    .gallery-swiper .swiper-button-prev {
+        opacity: 0.5;
+    }
+
+    /* Section headers */
+    .section-header h2 {
+        font-size: 52px;
+    }
+
+    /* Footer */
+    .footer-name {
+        font-size: 64px;
+    }
+
+    /* Music button */
+    #music-btn {
+        bottom: 32px;
+        right: 32px;
+        width: 52px;
+        height: 52px;
+    }
+
+    .volume-slider {
+        right: 32px;
+        bottom: 92px;
+        width: 52px;
+    }
+}
+
+/* ── Large Desktop (≥ 1440px) ──────────────────────────── */
+
+@media (min-width: 1440px) {
+
+    .container {
+        max-width: 800px;
+    }
+
+    .hero-name {
+        font-size: 120px;
+    }
+}
+
+/* ── Prevent horizontal scroll ─────────────────────────── */
+
+html, body {
+    max-width: 100vw;
+    overflow-x: hidden;
+}
+
+/* ── Reduced motion ────────────────────────────────────── */
+
+@media (prefers-reduced-motion: reduce) {
+
+    *,
+    *::before,
+    *::after {
+        animation-duration: 0.01ms !important;
+        animation-iteration-count: 1 !important;
+        transition-duration: 0.01ms !important;
+    }
+
+    html {
+        scroll-behavior: auto;
+    }
+}

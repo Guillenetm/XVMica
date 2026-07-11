@@ -1,0 +1,166 @@
+/* ==========================================================
+   MICAELA XV — ANIMATIONS & KEYFRAMES
+   ========================================================== */
+
+/* ── Shimmer (Loader M) ────────────────────────────────── */
+
+@keyframes shimmer {
+    0%   { background-position: 200% center; }
+    100% { background-position: -200% center; }
+}
+
+/* ── Seal Pulse ────────────────────────────────────────── */
+
+@keyframes sealPulse {
+    0%, 100% { opacity: 0;   transform: scale(0.8); }
+    50%      { opacity: 0.6; transform: scale(1.1); }
+}
+
+/* ── Tap message fade ──────────────────────────────────── */
+
+@keyframes fadeInOut {
+    0%, 100% { opacity: 0.3; }
+    50%      { opacity: 0.6; }
+}
+
+/* ── Float Particle ────────────────────────────────────── */
+
+@keyframes floatParticle {
+    0% {
+        transform: translateY(100vh) translateX(0);
+        opacity: 0;
+    }
+    10% {
+        opacity: 0.4;
+    }
+    90% {
+        opacity: 0.2;
+    }
+    100% {
+        transform: translateY(-10vh) translateX(40px);
+        opacity: 0;
+    }
+}
+
+/* ── Twinkle (Stars) ───────────────────────────────────── */
+
+@keyframes twinkle {
+    0%, 100% { opacity: 0.2; transform: scale(0.8); }
+    50%      { opacity: 0.8; transform: scale(1.2); }
+}
+
+/* ── Music bars ────────────────────────────────────────── */
+
+@keyframes musicBar1 {
+    0%, 100% { height: 4px; }
+    50%      { height: 16px; }
+}
+
+@keyframes musicBar2 {
+    0%, 100% { height: 8px; }
+    50%      { height: 12px; }
+}
+
+@keyframes musicBar3 {
+    0%, 100% { height: 12px; }
+    50%      { height: 6px; }
+}
+
+@keyframes musicBar4 {
+    0%, 100% { height: 6px; }
+    50%      { height: 14px; }
+}
+
+/* ── Result Glow ───────────────────────────────────────── */
+
+@keyframes resultGlow {
+    0%   { opacity: 0; }
+    50%  { opacity: 0.4; }
+    100% { opacity: 0.15; }
+}
+
+/* ── Silver Rain (envelope open) ───────────────────────── */
+
+@keyframes silverRain {
+    0% {
+        transform: translateY(0) rotate(0deg);
+        opacity: 0.8;
+    }
+    100% {
+        transform: translateY(100vh) rotate(720deg);
+        opacity: 0;
+    }
+}
+
+/* ── Confetti fall ─────────────────────────────────────── */
+
+@keyframes confettiFall {
+    0% {
+        transform: translateY(-20px) rotate(0deg) scale(1);
+        opacity: 1;
+    }
+    100% {
+        transform: translateY(100vh) rotate(720deg) scale(0.5);
+        opacity: 0;
+    }
+}
+
+/* ── Fade In Up ────────────────────────────────────────── */
+
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* ── Scale In ──────────────────────────────────────────── */
+
+@keyframes scaleIn {
+    from {
+        opacity: 0;
+        transform: scale(0.9);
+    }
+    to {
+        opacity: 1;
+        transform: scale(1);
+    }
+}
+
+/* ── GSAP helper classes ───────────────────────────────── */
+
+.gsap-hidden {
+    opacity: 0;
+    visibility: hidden;
+}
+
+.gsap-fade-up {
+    opacity: 0;
+    transform: translateY(40px);
+}
+
+.gsap-fade-in {
+    opacity: 0;
+}
+
+.gsap-scale-in {
+    opacity: 0;
+    transform: scale(0.9);
+}
+
+/* ── Smooth section reveal ─────────────────────────────── */
+
+.reveal-section {
+    opacity: 0;
+    transform: translateY(40px);
+    transition: opacity 0.8s var(--ease-out), transform 0.8s var(--ease-out);
+}
+
+.reveal-section.revealed {
+    opacity: 1;
+    transform: translateY(0);
+}

@@ -1,0 +1,17 @@
+{
+    "name": "XV Años de Micaela",
+    "short_name": "XV Micaela",
+    "description": "Invitación a los XV años de Micaela — 19 de Febrero de 2027",
+    "start_url": "/",
+    "display": "standalone",
+    "theme_color": "#102A43",
+    "background_color": "#FFFFFF",
+    "lang": "es",
+    "icons": [
+        {
+            "src": "icons/favicon.svg",
+            "type": "image/svg+xml",
+            "sizes": "any"
+        }
+    ]
+}
